@@ -1,0 +1,272 @@
+<title>Mini Super W</title>
+
+<meta charset="utf-8"></meta>
+
+<!-- Top navigation -->
+
+<div class="topnav">
+  <a href="inflables.html"
+  target="_blank">
+    <p7><marquee>Renta de mesas, sillas e inflables para tus eventos</marquee></p7>
+  </a>
+</div>
+
+<h1><span class="blinking">MINI  SUPER "W"</span></h1>
+
+<p3>PEDIDOS A DOMICILIO AL <a href="tel:[+52(81)83835602]">83-83-56-02</a></p3>
+
+<h2>*VENTA DE CERVEZA Y ABARROTES*<br/>*RENTA DE INFLABLES Y MESAS*</h2>
+
+<!-- Photo slide -->
+
+<div align="center">
+  <img
+    class="mySlides"
+    src="images/principal2.jpeg"
+    width="800"
+    height="400"/>
+  <img
+    class="mySlides"
+    src="images/abarrotesw.jpg"
+    width="800"
+    height="400"/>
+  <img
+    class="mySlides"
+    src="images/jugos.jpg"
+    width="800"
+    height="400"/>
+  <img
+    class="mySlides"
+    src="images/bebidas.jpg"
+    width="800"
+    height="400"/>
+  <img
+    class="mySlides"
+    src="images/cervezaW.jpg"
+    width="800"
+    height="400"/>
+  <a
+    href="inflables.html"
+    target="_blank">
+    <img
+      class="mySlides"
+      src="images/brincolin.jpg"
+      width="800"
+      height="400"/>
+  </a>
+
+</div>
+
+<p2>Direccion: Jorge Gonzalez Camarena # 101, San Nicolás de los Garza</p2>
+
+<br/>
+
+<button
+  class="button"
+  onclick=" window.open('https://www.google.com/maps/dir//Super+Mini+W,+Jorge+Gonz%C3%A1lez+Camarena+101,+Residencial+Roble+2do+Sector,+66414+San+Nicol%C3%A1s+de+los+Garza,+N.L.,+Mexico/@25.765017,-100.2852911,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x866294a23e5d1553:0x708055e50a5757f8!2m2!1d-100.2831024!2d25.765017!3e0','_blank')">
+  COMO LLEGAR
+</button>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<!-- To calculate store schedules -->
+
+<p2 id="demo1"></p2>
+
+<!-- openclose -->
+
+<br/>
+
+<a href="#schedule">
+  <p4
+    id="demo2"
+    style="text-decoration:underline;">
+  </p4>
+</a>
+
+<!-- time open -->
+
+<br/>
+
+<br/>
+
+<br/>
+
+<!--
+  for testing porpouses       <p4 id="demo3"></p4>  tomorrow     <br>       <p2 id="demo4"></p2> day
+  <br>       <p2 id="demo5"></p2> hour     <br>
+-->
+
+<!-- check if store is open -->
+
+<a
+  id="goinflables"
+  href="inflables.html"
+  target="_blank">
+  <img
+    align="center"
+    src="images/brincolin.jpg"
+    width="70%"
+    height="60%"/>
+</a>
+
+<br/>
+
+<div align="center">
+  <p4>Revisa nuestras excelentes promociones en nuestra pagina de Facebook:</p4>
+
+  <br/>
+
+  <a
+    href="https://www.facebook.com/minisuperw.mx/"
+    target="_blank">
+    <img
+      src="images/facebook.png"
+      width="100"
+      height="80"/>
+  </a>
+</div>
+
+<br/>
+
+<br/>
+
+<p8 id="schedule">
+  Horario:
+
+  <br/>
+
+  Lunes     6:00 -  00:00
+
+  <br/>
+
+  Martes    6:00 -  00:00
+
+  <br/>
+
+  Miercoles 6:00 -  00:00
+
+  <br/>
+
+  Jueves     6:00 -  00:00
+
+  <br/>
+
+  Viernes    7:00 -   1:00
+
+  <br/>
+
+  Sabado     7:00 -   1:00
+
+  <br/>
+
+  Domingo    8:00 - 15:00
+
+  <br/>
+</p8>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<script>
+  var d = new Date();
+  var n = d.getDay();
+  var y = d.getHours();
+  var time;
+  var man = "";
+  var oc;
+
+  //console.log('n= ' + n);
+  //console.log('y= ' + y);
+  if ((n >=  01 && n <=  04) && (y >= 06 && y <= 24)){
+     oc = "ABIERTO AHORA";
+     time =  " Horario hoy: 6:00 - 00:00 ";
+   }
+   else if ((n ==  5 || n ==  6) && ((y >= 7 && y < 24) || (y == 0))){
+        oc = "ABIERTO AHORA";
+        time =  " Horario hoy: 7:00 - 01:00";
+      }
+   else if ((n ==  0) && (y >= 8 && y <= 15)){
+        oc = "ABIERTO AHORA";
+        time =  " Horario hoy: 8:00 AM - 15:00";
+     }
+   else{
+     oc = "YA ESTA CERRADO";
+     time = " ";
+
+     if((n >=  1 && n <=  3) || (n == 0)){   //sund to wedn
+       if(y < 24){
+        time = "Mañana abierto de 6:00 - 00:00";
+        }
+       else{
+         if(n == 0){
+           time =  " Horario hoy: 8:00 AM - 15:00";
+         }
+         else{
+           time =  " Horario hoy: 6:00 - 00:00 ";
+         }
+       }
+     }
+     else if (n ==  4 || n ==  5){          //thurs to friday
+       if(y < 24){
+         time = "Mañana abierto de 7:00 - 1:00";
+       }
+      else{
+        if(n == 4){
+          time =  " Horario hoy: 6:00 - 00:00 ";
+        }
+        else{
+          time =  " Horario hoy: 7:00 - 1:00 ";
+        }
+      }
+     }
+     else if (n ==  6){
+       if(y < 24){                  //sat
+        time = "Mañana abierto de 8:00 - 15:00";
+        }
+      else{
+        time =  " Horario hoy: 7:00 - 1:00 ";
+      }
+     }
+    }
+
+    document.getElementById("demo1").innerHTML = oc;
+    document.getElementById("demo2").innerHTML = time;
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+
+</script>
+
+<link
+  href="https://fonts.googleapis.com/css?family=Indie+Flower"
+  rel="stylesheet">
+</link>
+
+<link
+  href="style.css"
+  rel="stylesheet">
+</link>
